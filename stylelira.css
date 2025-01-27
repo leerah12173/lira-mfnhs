@@ -1,0 +1,138 @@
+
+
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family:Arial, sans-serif;
+}
+
+header {
+    background: lightpink;
+    color:antiquewhite;
+    padding: 10px 20px;
+}
+
+nav {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.navbar {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+.navbar li a {
+    color: lightgoldenrodyellow;
+    text-decoration: none;
+    padding: 10px;
+}
+
+.navbar li a.active,
+.navbar li a:hover {
+    background: beige;
+    color:plum;
+    border-radius: 5px;
+}
+.menu.icon {
+    display: none;
+    cursor: pointer;
+    font-size: small;
+    color: plum;
+}
+
+#menu-toggle {
+    display: none;
+}
+
+#menu-toggle:checked + .menu-icon + .navbar {
+    display: block;
+    flex-direction: column;
+    background: pink;
+}
+
+@media (max-width: 768px) {
+    .menu-icon {
+        display: none;
+        display: block;
+    }
+
+    .navbar {
+        display: none;
+        width: 100%
+    }
+
+    .navbar li {
+        text-align: center;
+    }
+}
+section .section-content h1{
+    color:blanchedalmond;
+    font-size: 100px;
+    font-family: Arial,Helvetica,sans-serif;
+    text-align: center;
+}
+   
+ section .section-content h2{
+    color:grey;
+    font-size: 50px;
+    font-family: Arial,Helvetica,sans-serif;
+    text-align: center;
+}
+
+section img{
+    height:1000px;
+    width: 700px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+footer {
+    background-color: blanchedalmond;
+    color: rgb(186, 186, 186);
+    padding: 20px 0;
+}
+
+.footer-row {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+
+.footer-left, .footer-center, .footer-right {
+    width: 30%;
+    text-align:center;
+}
+
+.footer-left h4, .footer-center h4, .footer-right h4 {
+    font-size:18px;
+    margin-bottom:10px;
+}
+
+.footer-left ul, .footer-center ul, .footer-right ul {
+    list-style: none;
+}
+
+.footer-left li, .footer-center li, .footer-right li {
+    margin-bottom: 5px;
+}
+
+.footer-left a, .footer-center a, .footer-tight a {
+    color:gray;
+    text-decoration: none;
+}
+
+.footer-left a:hover, .footer-center a:hover, .footer-right a:hover {
+    color:plum
+}
